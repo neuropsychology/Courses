@@ -7,7 +7,7 @@
 *<p align="center">This course is supported by the École de Neuropsychologie group.</p>*
 
 ---
-
+blabla
 ## About the course
 
 This course was crafted by psychologists, neuropsychologists and neuroscientists for psychologists, neuropsychologists and neuroscientists.
