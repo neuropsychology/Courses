@@ -462,7 +462,8 @@ We will finish this course by what makes the wealth of languages such as R, Pyth
 In R, there are three ways of installing a package. For the majority of packages.
 - Click on Tools -> Install Packages...
 - Directly use the `install.packages()` function. For example, we can download the "devtools" package by running the following command:
-- 
+
+
 ```R
   install.packages("devtools")
 ```
