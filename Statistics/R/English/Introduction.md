@@ -10,6 +10,12 @@
 
 ## About the course
 
+
+| Course Status | BETA |
+|---------------|---|
+| Length | 1h |
+
+
 This course was crafted by psychologists, neuropsychologists and neuroscientists for psychologists, neuropsychologists and neuroscientists.
 As such, it is a straightforward introduction to R with a special focus on how to get some actual results with it.
 It is not a programming course, nor a course on statistics *per se*.
