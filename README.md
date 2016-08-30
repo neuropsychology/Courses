@@ -2,6 +2,12 @@
 
 Here you will find Tutorials and Courses for Statistics, Programming and more
 
+|Status|Open|
+|----------------|---|
+|Authors|Dominique Makowski<br>Laurie Compère|
+
+
+
 # How to contribute
 
 You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things.
