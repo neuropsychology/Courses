@@ -48,7 +48,7 @@
 
 ## Bibliography
 
-[Stahh (2007)](https://www.amazon.fr/guide-prescripteur-Psychopharmacologie-essentielle/dp/2257156609)
-[Preston (2013)](https://www.amazon.com/Handbook-Clinical-Psychopharmacology-Therapists-Preston/dp/1608826643)
-[Preston (2014)](https://www.amazon.com/Psychopharmacology-Ridiculously-Medmaster-Published-MedMaster/dp/B00HQ1MIUQ)
-[Preston (2015)](https://www.amazon.com/Child-Adolescent-Clinical-Psychopharmacology-Simple/dp/1626251916/ref=dp_ob_title_bk)
+- [Stahh (2007)](https://www.amazon.fr/guide-prescripteur-Psychopharmacologie-essentielle/dp/2257156609)
+- [Preston (2013)](https://www.amazon.com/Handbook-Clinical-Psychopharmacology-Therapists-Preston/dp/1608826643)
+- [Preston (2014)](https://www.amazon.com/Psychopharmacology-Ridiculously-Medmaster-Published-MedMaster/dp/B00HQ1MIUQ)
+- [Preston (2015)](https://www.amazon.com/Child-Adolescent-Clinical-Psychopharmacology-Simple/dp/1626251916/ref=dp_ob_title_bk)
