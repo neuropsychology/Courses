@@ -98,7 +98,7 @@ R will require from you to think differently. Especially if you're used to softw
 But it's for the best. 
 
 - It will require and develop a deep knowledge of your data
-- Think in terms of "objects": everything in R is an object, a dataframe, a function, a result, a statistical model etc. An object is basically just a container of information.
+- Think in terms of "objects": everything in R is an object; a dataframe, a function, a result, a statistical model etc. An object is basically just a container of information.
 
 The syntax in R is quite consistent. You apply a function on an object. This function returns something that you can store in another object.
 ```R
