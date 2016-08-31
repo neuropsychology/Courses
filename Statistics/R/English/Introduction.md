@@ -364,7 +364,7 @@ How to remove all the people that reported suffering from a mood disorder? First
 ```R
 summary(df$Mood_Disorder)
 ```
-**NOTE: if you don't remember the exact name of a variable, you can list all your variables by executing the command `names(df)`.
+**NOTE: if you don't remember the exact name of a variable, you can list all your variables by executing the command `names(df)`.**
 
 It is a factor with two levels, "Presence" and "Absence". We want to keep only the subset of people that have `Mood_Disorder` equal to "Absence". We do it with the following:
 
