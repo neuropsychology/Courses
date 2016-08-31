@@ -172,7 +172,7 @@ We want to read the csv and to store it in an object that we will call `df`. In 
 ```R
 df <- read.csv("personality.csv")
 ```
-**NOTE: use read.csv for non-European files and read.csv2 for some European files (French or German for example): the difference lies in the format, the former use a dot separation for decimals (`3.12`) and the latter use a comma (`3,12`)**
+**NOTE: use `read.csv(...)` for non-European files and `read.csv2(...)` for some European files (French or German for example): the difference lies in the format, the former use a dot separation for decimals (`3.12`) and the latter use a comma (`3,12`)**
 
 Then, execute this line of code by clicking on it and pressing CTRL + ENTER.
 
