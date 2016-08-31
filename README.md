@@ -20,4 +20,4 @@ You found some errors? Something was unclear? You can contribute to the courses 
 6. Go to the root of the project (yourgithubaccount/Courses) and click on "New Pull Request"
 7. Create the pull request, then wait for it to be discussed and accepted
 
-See [this video] for a clear explanation.
+See [this video](https://www.youtube.com/watch?v=yr6IzOGoMsQ) for a clear explanation.
