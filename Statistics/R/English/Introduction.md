@@ -341,18 +341,18 @@ t.test(df$Negative_Affect ~ df$Sex, var.equal=TRUE)
 ```
 Due to the large sample, the result did not differ that much. The output shows that the level of negative affect is still significantly higher in women than in men.
 
-in R, all functions have arguments. You can get display the documentation by typing `?yourfunction()` to have more info about what are the defaults and what can be changed.
+in R, all functions have arguments. You can display the documentation by typing `?yourfunction()` to have more info about the arguments and their defaults.
 
 
 ### Ugly box plots
 
-Instead of t testing the differences between the two groups, we can also plot it with the function... plot(). Let's run the following:
+Instead of t-testing the differences between the two groups, we can also plot it with the function... `plot()`. Let's run the following:
 
 ```R
 plot(df$Negative_Affect ~ df$Sex)
 ```
 
-[For a course on plotting, see this tutorial.] NOT AVAILABLE YET
+*[For a course on plotting, see this tutorial.] NOT AVAILABLE YET*
 
 
 ### Subsetting
