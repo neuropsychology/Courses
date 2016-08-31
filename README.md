@@ -2,7 +2,7 @@
 
 Here you will find Tutorials and Courses for Statistics, Programming and more
 
-|Status|Open|
+|Status|![](https://img.shields.io/badge/status-open-brightgreen.svg)|
 |----------------|---|
 |Authors|Dominique Makowski<br>Laurie Compère|
 
