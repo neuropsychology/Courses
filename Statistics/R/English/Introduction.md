@@ -116,8 +116,6 @@ Download and install R for [MacOS](https://cran.r-project.org/bin/macosx/), [Win
 
 - <img src="https://www.rstudio.com/wp-content/uploads/2014/03/blue-250.png" height="22">
 
-R is the language. But it is only a language. After installing R, you will also need an editor. The most popular is RStudio.
-
 Click on [this link](https://www.rstudio.com/products/rstudio/download3/) and then on the Download green button of RStudio Desktop (Free Licence). Then, choose your platform (Windows, MacOS or Linux).
 
 
