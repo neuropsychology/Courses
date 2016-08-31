@@ -360,10 +360,13 @@ plot(df$Negative_Affect ~ df$Sex)
 We have to be careful. Our results about the Sex difference on Negative Affect could be biased by another variable, namely the presence of a mood disorder.
 Indeed, as their prevalence is higher in women, it could bias the results by boosting the level of Negative Affect in women.
 
-How to remove all the people that reported suffering from a mood disorder? First let's see how is organized this variable.
+How to remove all the people that reported suffering from a mood disorder?
+First let's see how this variable is organized.
+
 ```R
 summary(df$Mood_Disorder)
 ```
+
 **NOTE: if you don't remember the exact name of a variable, you can list all your variables by executing the command `names(df)`.**
 
 It is a factor with two levels, "Presence" and "Absence". We want to keep only the subset of people that have `Mood_Disorder` equal to "Absence". We do it with the following:
@@ -371,29 +374,31 @@ It is a factor with two levels, "Presence" and "Absence". We want to keep only t
 ```R
 df <- subset(df, Mood_Disorder=="Absence")
 ```
-Ok so what it means is that we want a subset of "df", in which the variable Mood_Disorder equals to "Absence". 
-Why two equals sign? Because it is not a statement that says this equals to this, but rather an evaluation ("when this equals to that, then it is true"). 
+Ok, so what it means is that we want a subset of "df" (our dataframe), in which the variable Mood_Disorder equals to "Absence". 
+Why two equals sign? Because, to put it simply, it is not a statement that says "this equals this", but rather an evaluation ("when this equals to that, then it is true"). 
 Other operators are ">", "<", "<=", ">=" and "!=" (for "not equal").
 
 So now we have a dataframe with only the people that did not report suffering from a mood disorder. 
-But wait... *we've overwrite our data!* by replacing the original object df with the new subset! 
+But wait... *we've overwrite our data!* 
+Indeed, we replaced the original object df with the new subset.
 
 **No worries, R is completely data safe. It never works directly on the data file. Unless you explicitly ask him to save something, it will never modify the external files.**
 So we can simply run the code again, from the beginning, whenever we want, to reload the original dataframe and do all these steps over again.
 
 
-## Let's finish with some complex stuff
+## Let's finish with some more complex stuff
 
-It is a lie. In R, many complex algorithms and statistical procedures are as simply to run than a correlation. Your job is then to know if you applied the right method, and to correctly interpret the output.
+It is a lie. In R, many complex algorithms and statistical procedures are as simply to run as a correlation. Your job is then to know if you applied the right method, and to correctly interpret the output.
 
 ### ANOVAs & post-hocs
 
-The third widely used procedure is the Analysis Of Variance (aov). We will use this to see if there is an interaction between the Sex and the presence of Mood Disorder. 
-First, we have to avoid the line of our script where we do the subsetting. 
-But we don't need to remove it, we can simply *comment* it by adding a "#" at the beginning of the line (or by pressing CTRL + SHIFT + C). 
-We can keep lines of code, or some comments about each line, that will not be ran when the code is executed.
+The third widely used procedure is the Analysis Of Variance (aov), which we will use to see if there is an interaction between the Sex and the presence of Mood Disorder.
+Therefore, we want to avoid the line of our script where we do the subsetting. 
+However, we don't need to remove it, we can simply *comment* it by adding a "#" at the beginning of the line (or by pressing CTRL + SHIFT + C). 
 
-Then, rerun your script from the beginning (by clicking on the run button or by selecting all the script and pressing CTRL + ENTER). It should do, again, all the things we did, without the subsetting, resulting in a dataframe of 1327 observations.
+**A useful feature is that we can keep lines of code, or some comments about each line, to remember what we did, that will not be ran when the code is executed.**
+
+After having commented that subsetting line, rerun your script from the beginning (by clicking on the run button or by selecting all the script and pressing CTRL + ENTER). It should do, again, all the things we did, without the subsetting, resulting in a dataframe of 1327 observations.
 
 
 Then, we will do a analysis of variance with the `aov()` function, and place the results in an object that we can call... "results".
@@ -402,9 +407,9 @@ Then, we will do a analysis of variance with the `aov()` function, and place the
 results <- aov(df$Negative_Affect ~ df$Sex * df$Mood_Disorder)
 ```
 
-This formula means that we want to explain/predict the Negative Affect (our *outcome variable*) with Sex, Mood Disorder *and* the interaction between the two predictors. If you don't want to include the interaction, replace the " * " with a " + ".
+This formula means that we want to explain/predict the Negative Affect (our *outcome variable*) with Sex, Mood Disorder **and** the interaction between the two predictors. If you don't want to include the interaction, replace the **" * "** by a **" + "**.
 
-For more clarity, we can pass the dataframe df as an argument, thus specifying it only once, as follows:
+For more clarity, we can pass the dataframe `df` as an argument, thus specifying it only once, as follows:
 
 ```R
 results <- aov(Negative_Affect ~ Sex * Mood_Disorder, data=df)
@@ -414,7 +419,7 @@ If we run this line, nothing happens, but a second object, called results, is cr
 summary(results)
 ```
 
-Which will return the analysis of variance table.
+This will return the analysis of variance table.
 
 ```
                     Df Sum Sq Mean Sq F value   Pr(>F)    
@@ -435,12 +440,12 @@ TukeyHSD(results)
 ### Linear Modeling
 
 In fact, the correlation, the t-tests and the ANOVA we did are all a part of the same framework: linear modeling. 
-Correlation is fitting a linear model with two (scaled and centered) numeric variables, t-test is a linear model with a numeric variable as the outcome variable and one factor with two levels as the predictor. 
-And an ANOVA/MANOVA focuses on the effect of categorical predictors (factors).
+Correlation is fitting a linear model with two (scaled and centered) numeric variables. 
+A t-test is a linear model with a numeric variable as the outcome variable and one factor with two levels as the predictor, and an ANOVA/MANOVA focuses on the effect of categorical predictors (factors).
 
-**Fitting linear models is a general procedure that withholds all the information, and that could replace the use of t-tests, anovas and correlations, if only we psychologists were used to read its output.**
+**Fitting linear models is a general procedure that withholds all the information, and that could replace the use of t-tests, ANOVAs and correlations, if only we psychologists were used to read its output.**
 
-Fitting a linear model is the same as running an ANOVA. Let's do it and store its output in an object we call "fit", and inspect the results with the `summary()` function.
+Fitting a linear model is the same as running an ANOVA. Let's do it and store its output in an object we call "fit" (also a conventional name for a model we fitted), and inspect the results with the `summary()` function.
 
 ```R
 fit <- lm(Negative_Affect ~ Sex * Mood_Disorder, data=df)
@@ -453,20 +458,23 @@ That generates a lot of information, which I will not explain in details in the 
 ### Linear Models vs. ANOVAs, t-tests and correlations
 
 Not convinced by the fact that a linear model is the general framework all of these other procedures work on?
-Let's do an analysis of variance of the linear model fitted above and compare it with the analysis of variance table obtained with the `aov()` function.
+Let's do an analysis of variance on the linear model fitted above and compare it with the analysis of variance table obtained with the `aov()` function.
 
 ```R
 anova(fit)
 ```
 
-Not fit a linear model with Sex as the only predictor and compare it with the result of a t-test:
+Yes, it's pretty much the same. To put it simply, the `aov()` function works as a wrapper function that does an ANOVA on a linear model). 
+
+Now fit a linear model with Sex as the only predictor and compare it with the result of a t-test:
 ```R
 fit <- lm(Negative_Affect ~ Sex, data=df)
 summary(fit)
 t.test(Negative_Affect~Sex, data=df, var.equal=TRUE)
 ```
-As you can see, the p value is the same. Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the β (the "beta", the slope), displayed under "Estimate" in the linear model output. 
-If you're really rigid and tenacious, you might argue that the `t.test()` function gives us the confidence interval for the estimate...
+As you can see, the p value is the same. 
+Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the β (the "beta", the slope), displayed under "Estimate" in the linear model output. 
+But still, if you're really rigid and tenacious, you might argue that the `t.test()` function gives us the confidence interval for the estimate that the `lm()` does not provide...
 
 ```R
 confint(fit)
@@ -501,24 +509,25 @@ cor.test(df$Negative_Affect, df$Age)
 
 As you can see, the p value and the beta are almost identical (altough not exactly, due to some minimal imprecisions caused by the intermediate `scale()` function). Again, you can retrieve the confidence interval with the `confint()` function.
 
-**As a conclusion, linear and nonlinear modelling is a powerful and consistent framework.**
+**As a conclusion, linear and nonlinear modelling is a powerful, consistent and general framework.**
 
 
 
 ### Packages
 
-We will finish this course by what makes the wealth of languages such as R, Python, Matlab or Julia. The existence of thousands of packages (or modules) that extent their possibilities.
+We will finish this course by what makes the wealth of languages such as R, Python, Matlab or Julia:
+The existence of thousands of packages (or modules) that extent their possibilities.
 
-In R, there are three ways of installing a package. For the majority of packages.
+In R, there are three ways of installing a package. For the majority of packages, you can do:
+
 - Click on Tools -> Install Packages...
 - Directly use the `install.packages()` function. For example, we can download the "devtools" package by running the following command:
-
 
 ```R
   install.packages("devtools")
 ```
 
-This package contains a function that will allow to download unregistered (often *in development* packages, or because their maintener is as lazy as me to register it officially), such as the *neuropsychology* package.
+This package contains a function that will allow to download unregistered (often *in development* packages(or packages of which the maintener is as lazy as me to register it officially)), such as the *neuropsychology* package.
 
 First, every time you start an R session, you need to *load* a package in order to use it:
 
@@ -526,7 +535,7 @@ First, every time you start an R session, you need to *load* a package in order 
   library("devtools")
 ```
 
-This basically activate the package and load its functions into your current package library.
+This basically activates the package and loads its functions into your current package library.
 
 Then, we can use another function to download the neuropsychology package.
 
@@ -545,6 +554,7 @@ This package contains the function `cortable()` that returns a correlation matri
 
 :clap::clap::clap::clap:
 
-We hope you're not afraid to do your statistics with R anymore and that you are eager to discover more about this language. Believe us, it's worth it.
+We hope you're not afraid to do your statistics with R anymore and that you are eager to discover more about this language. 
+Believe us, it's worth it.
 
 **Thank you !!!**
