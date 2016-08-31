@@ -172,6 +172,7 @@ We want to read the csv and to store it in an object that we will call `df`. In 
 ```R
 df <- read.csv("personality.csv")
 ```
+**NOTE: use read.csv for non-European files and read.csv2 for some European files (French or German for example): the difference lies in the format, the former use a dot separation for decimals (`3.12`) and the latter use a comma (`3,12`)**
 
 Then, execute this line of code by clicking on it and pressing CTRL + ENTER.
 
@@ -184,11 +185,7 @@ It looked for a file of that name in the *working directory*, defined above, whi
 If you look into the environment panel, you'll see that a line just appeared that says "df    1327 obs. of 20 variables".
 Indeed, the personality dataset consists of 1327 participants (rows/observations) and 20 variables (columns/variables). 
 
-
-**NOTE: use read.csv for non-European files and read.csv2 for some European files (French or German for example): the difference lies in the format, the former use a dot separation for decimals (`3.12`) and the latter use a comma (`3,12`)**
-
-**NOTE2: R is case-sensitive, meaning that it matters whether it is upper or lowercase. If you type rEad.csv or "persoNality.csv", it won't work. This is the cause of many errors when beginning**
-
+**NOTE: R is case-sensitive, meaning that it matters whether it is upper or lowercase. If you type rEad.csv or "persoNality.csv", it won't work. This is the cause of many errors when beginning**
 
 But we would like to *actually* see it, right? 
 See what variables there are etc. 
