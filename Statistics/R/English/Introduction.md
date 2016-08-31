@@ -232,25 +232,25 @@ sd(df$Age)
 
 ### Variable type
 
-Now try applying the `mean()` function on the Sex variable (`mean(df$Sex)`). 
+Now try applying the `mean()` function on the Sex variable "`mean(df$Sex)`". 
 What happened? R throws an error message. 
 Indeed, Sex is not a **numeric variable**, but a **factor**. 
 And the mean of a factor makes not much sense.
 
-It should also throw an error if we apply the function `mean()` on the Study_Level variable, that is a factor with 7 levels (coded from 0 to 7, 0 meaning primary school and 7 corresponding to a doctorate degree). 
+It should also throw an error if we apply the function `mean()` on the Study_Level variable, which is a factor with 7 levels (coded from 0 to 7, 0 corresponding to primary school and 7 corresponding to a doctorate degree). 
 
 As you can see, R sees no problem and returns us a mean. Why? 
-Because it thinks that it is a numeric variable (we must admit that it looks like it). 
+Because it thinks that it is a numeric variable (In its defence, we must admit that it looks like it). 
 Same goes for the Salary variable.
 
 **So before doing any analysis, make sure to check the type of your variables and convert them when necessary**.
 
 We can convert a variable by using the `as.factor()` command (and `as.numeric()` in the reverse case). 
-However, if we simply run `as.factor(df$Study_Level)`, it will print the variable. 
-But, if you do, again, a summary of this variable, you'll see that R keeps considering it as a numeric variable. 
+If we simply run `as.factor(df$Study_Level)`, it will print the variable. 
+However, if you do, again, a summary of this variable, you'll see that R keeps considering it as a numeric variable. 
 Why? Because we must **replace** the variable from the dataframe by the transformed one.
 
-So, the proper way to go is to run the following:
+So, the right way to go is to run the following:
 ```R
 df$Study_Level <- as.factor(df$Study_Level)
 df$Salary <- as.factor(df$Salary)
@@ -263,13 +263,14 @@ Once our variables are correctly stored with the right type, let's jump to the n
 ### Individual Correlations
 
 Correlations are one of the most popular statistical procedure in psychological science. 
-To run a correlation test between the Age of the participant and the Negative Affect (the tendency to experience negative emotions such as sadness, anger, fear or anxiety) personality trait, run the following:
+To run a correlation test between the Age of the participant and the Negative Affect personality trait (the tendency to experience negative emotions such as sadness, anger, fear or anxiety), simply run the following:
 
 ```R
 cor.test(df$Age, Negative_Affect)
 ```
 
-Bravo, you've run your first statistical analysis! Once you'll be used to it, doing statistics with R will be way quicker than with any other software.
+Bravo, you've run your first statistical test! :smile:
+Once you'll be used to it, doing statistics with R will be way quicker than with any other software.
 
 
 The output is the following:
@@ -287,20 +288,20 @@ sample estimates:
 -0.2000692 
 ```
 
-It gives you all the important info: the estimated coefficient r (-0.057...), the p value, the 95% IC and the degrees of freedom.
+It gives you all the important info: the estimated coefficient r (-0.057...), the *p* value, the 95% CI and the degrees of freedom.
 
-It reveals that the correlation between Age and Negative Affect is significantly negative and moderate, meaning that the tendency to experience negative emotions diminish when Age increases.
+It reveals that the correlation between Age and Negative Affect is significantly negative and moderate, meaning that the tendency to experience negative emotions diminishes when Age increases.
 
 ### t-tests
 
-Another popular procedure is the t-test to compare two groups. 
-Let's compare the men and the women on the Extraversion variable by running the following:
+When comparing two groups, another popular procedure is the t-test.
+Let's compare the men and the women on the Negative Affect variable by running the following:
 
 ```R
-t.test(df$Extraversion ~ df$Sex)
+t.test(df$Negative_Affect ~ df$Sex)
 ```
 
-Wait, what is that `~` sign? It basically means "by". I want the statistics on Extraversion by Sex.
+Wait, what is that `~` sign? It basically means "by". "I want the statistics on Negative Affect by Sex".
 
 Let's take a look at the output:
 
@@ -317,13 +318,14 @@ mean in group F mean in group M
        3.475024        2.789051  
 ```
 
-It says a Welsh t-test! Usually, people don't do a Welsh test but assumes that the two samples are of equal variance... Let's take a look at the documentation of the variable by running the following:
+Ok, so in general, women appear to have a higher level of negative affect. But wait, it says we did a Welsh t-test! Usually, people don't do a Welsh test but assumes that the two samples are of equal variance... Let's take a look at the documentation of the variable by running the following:
 
 ```R
 ?t.test()
 ```
 
-This will show the documentation for the function. Indeed, in R, **almost every function is documented**.
+This will show the documentation for the function. 
+Indeed, in R, **almost every function is documented**.
 
 In the documentation of this function, under the *Arguments* section, we find the following:
 
@@ -331,12 +333,13 @@ In the documentation of this function, under the *Arguments* section, we find th
 a logical variable indicating whether to treat the two variances as being equal. If TRUE then the pooled variance is used to estimate the variance otherwise the Welch (or Satterthwaite) approximation to the degrees of freedom is used.
 ```
 
-It corresponds to the `var.equal` argument. In the Usage section, it is indicated that the default value for this argument is `FALSE`. We can change it with the following:
+It corresponds to the `var.equal` argument. In the Usage section, it is indicated that the default value for this argument is `FALSE`.
+We can change it with the following:
 
 ```R
 t.test(df$Negative_Affect ~ df$Sex, var.equal=TRUE)
 ```
-The output shows that the level of Negative Affect is significantly greater in Women than in Men.
+Due to the large sample, the result did not differ that much. The output shows that the level of negative affect is still significantly higher in women than in men.
 
 in R, all functions have arguments. You can get display the documentation by typing `?yourfunction()` to have more info about what are the defaults and what can be changed.
 
