@@ -100,7 +100,9 @@ But it's for the best.
 - It will require and develop a deep knowledge of your data
 - Think in terms of "objects": everything in R is an object; a dataframe, a function, a result, a statistical model etc. An object is basically just a container of information.
 
-The syntax in R is quite consistent. You apply a function on an object. This function returns something that you can store in another object.
+The syntax in R is quite consistent. 
+You apply a function on an object. 
+This function returns something that you can store in another object.
 ```R
   object2 <- function(object1)
 ```
@@ -125,7 +127,12 @@ Click on [this link](https://www.rstudio.com/products/rstudio/download3/) and th
 
 #### Initialization
 
-Create a folder where you will store your project (the data, scripts, plots...). Place your data in this folder. For this training, we will use the "personality" dataset available within the neuropsychology package. So right click on [this link](https://raw.githubusercontent.com/neuropsychology/neuropsychology.R/master/data/personality.csv) and select "save the link under" to download the dataset, which ends with .csv. This format (.csv for comma separated values) is a standard light format used in statistics. You can open those files with almost any softwares (including Excel, Statistica, etc.)
+Create a folder where you will store your project (the data, scripts, plots...). 
+Usually you would place your data in this folder. 
+For this training, we will use the "personality" dataset available within the neuropsychology package. 
+So right click on [this link](https://raw.githubusercontent.com/neuropsychology/neuropsychology.R/master/data/personality.csv) and select "save the link under" to download the dataset, which ends with .csv. 
+This format (.csv for comma separated values) is a standard light format used in statistics. 
+You can open those files with almost any softwares (including Excel, Statistica, etc.)
 
 1. Once you have a folder (that you can name "Rcourse" for example), and the file personality.csv in it,
 2. Open RStudio. Click on file -> new file -> R script. Then click on "save as", navigate to your project directory and save it there, with the personality.csv file.
@@ -137,7 +144,8 @@ So, each time you open RStudio, don't forget to do the following:
 
 - **click on Session -> Set Working Directory -> To Source File location**.
 
-What does it mean? That the working directory (where R will look for files and save things if asked to) is to be where the script (the source file) is.
+What does it mean? 
+That the working directory (where R will look for files and save things if asked to) is to be where the script (the source file) is.
 
 #### RStudio
 
@@ -148,12 +156,16 @@ Let's take a look at what we have now. A classic RStudio window is organized in 
 - **Environment**: a panel that will display the different variables, dataframes (which are all "objects") that we will create.
 - **Plots and Help**: a panel that will display the plots or the help for functions.
  
-You want to communicate with R? Type `3+5` into the console and press ENTER. See the result? It's magical. But from now on, we want to save the code we will create, so we won't type it directly in the console but in the script panel, that we can run and re-run again every time we want.
+You want to communicate with R? 
+Type `3+5` into the console and press ENTER. 
+See the result? It's magical. 
+But from now on, we want to save the code we will create, so we won't type it directly in the console but in the script panel, that we can run and re-run every time we want.
 
 
 ### Our First Object: `df`
 
-`df` is a convention name for dataframe, which is the classic format of statistical data. Is is organized into *variables*, the columns, that are named, and *observations*, the rows, that often are, in psychological science, participants.
+`df` is a convention name for **dataframe**, which is the classic format of statistical data. 
+Is is organized into *variables*, the columns, that are named, and *observations*, the rows, that often are, in psychological science, participants.
 
 We want to read the csv and to store it in an object that we will call `df`. In the script panel, write the following:
 
@@ -165,7 +177,9 @@ Then, execute this line of code by clicking on it and pressing CTRL + ENTER.
 
 *So, what happened here?*
 
-When you executed that line, it pasted it from the script into the console. Then, it applied the function `read.csv()` on the name "personality.csv" (it knows it is a name thanks to the quotes). It looked for a file of that name in the *working directory*, defined above, which is our project directory, found the file, read it, and returned a dataframe that we stored into an object called df (we could have called it differently, it doesn't matter).
+When you executed that line, it pasted it from the script into the console. 
+Then, it applied the function `read.csv()` on the name "personality.csv" (it knows it is a name thanks to the quotes). 
+It looked for a file of that name in the *working directory*, defined above, which is our project directory, found the file, read it, and returned a dataframe that we stored into an object called df (we could have called it differently, it doesn't matter).
 
 If you look into the environment panel, you'll see that a line just appeared that says "df    1327 obs. of 20 variables".
 Indeed, the personality dataset consists of 1327 participants (rows/observations) and 20 variables (columns/variables). 
@@ -176,7 +190,9 @@ Indeed, the personality dataset consists of 1327 participants (rows/observations
 **NOTE2: R is case-sensitive, meaning that it matters whether it is upper or lowercase. If you type rEad.csv or "persoNality.csv", it won't work. This is the cause of many errors when beginning**
 
 
-But we would like to *actually* see it, right? See what variables there are etc. So, we can do it like that:
+But we would like to *actually* see it, right? 
+See what variables there are etc. 
+We can do it like that:
 
 - Click on the small table-like button on the right of "df    1327 obs. of 20 variables". It will open a new tab where we can visualize the dataframe.
 
@@ -198,11 +214,13 @@ It will print, in the console, a summary of all the variables (note that there a
 
 ### Accessing Variables
 
-So, we have one object, called `"df"`, that is a dataframe, that itself contains 1327 rows and 20 *named* variables. We can access each variable using the `$` sign, that is the equivalent of "in". For example, execute the following line:
+So, we have one object, called `"df"`, that is a dataframe, that itself contains 1327 rows and 20 *named* variables. 
+We can access each variable using the `$` sign, that is the equivalent of "in". For example, execute the following line:
 ```R
 df$Age
 ```
-It will print, in the console, the variable "Age" that is stored *in* the object df. Again, we can use the function we used above, `summary()`, on the variable. Run the following line:
+It will print, in the console, the variable "Age" that is stored *in* the object df. 
+Again, we can use the function we used above, `summary()`, on the variable. Run the following line:
 
 ```R
 summary(df$Age)
@@ -217,15 +235,23 @@ sd(df$Age)
 
 ### Variable type
 
-Now try applying the `mean()` function on the Sex variable (`mean(df$Sex)`). What happened? R throws an error message. Indeed, Sex is not a **numeric variable**, but a **factor**. And the mean of a factor makes not much sense.
+Now try applying the `mean()` function on the Sex variable (`mean(df$Sex)`). 
+What happened? R throws an error message. 
+Indeed, Sex is not a **numeric variable**, but a **factor**. 
+And the mean of a factor makes not much sense.
 
 It should also throw an error if we apply the function `mean()` on the Study_Level variable, that is a factor with 7 levels (coded from 0 to 7, 0 meaning primary school and 7 corresponding to a doctorate degree). 
 
-As you can see, R sees no problem and returns us a mean. Why? Because it thinks that it is a numeric variable (we must admit that it looks like it). Same goes for the Salary variable.
+As you can see, R sees no problem and returns us a mean. Why? 
+Because it thinks that it is a numeric variable (we must admit that it looks like it). 
+Same goes for the Salary variable.
 
 **So before doing any analysis, make sure to check the type of your variables and convert them when necessary**.
 
-We can convert a variable by using the `as.factor()` command (and `as.numeric()` in the reverse case). However, if we simply run `as.factor(df$Study_Level)`, it will print the variable. But, if you do, again, a summary of this variable, you'll see that R keeps considering it as a numeric variable. Why? Because we must **replace** the variable from the dataframe by the transformed one.
+We can convert a variable by using the `as.factor()` command (and `as.numeric()` in the reverse case). 
+However, if we simply run `as.factor(df$Study_Level)`, it will print the variable. 
+But, if you do, again, a summary of this variable, you'll see that R keeps considering it as a numeric variable. 
+Why? Because we must **replace** the variable from the dataframe by the transformed one.
 
 So, the proper way to go is to run the following:
 ```R
@@ -239,7 +265,8 @@ Once our variables are correctly stored with the right type, let's jump to the n
 
 ### Individual Correlations
 
-Correlations are one of the most popular statistical procedure in psychological science. To run a correlation test between the Age of the participant and the Negative Affect (the tendency to experience negative emotions such as sadness, anger, fear or anxiety) personality trait, run the following:
+Correlations are one of the most popular statistical procedure in psychological science. 
+To run a correlation test between the Age of the participant and the Negative Affect (the tendency to experience negative emotions such as sadness, anger, fear or anxiety) personality trait, run the following:
 
 ```R
 cor.test(df$Age, Negative_Affect)
@@ -269,7 +296,8 @@ It reveals that the correlation between Age and Negative Affect is significantly
 
 ### t-tests
 
-Another popular procedure is the t-test to compare two groups. Let's compare the men and the women on the Extraversion variable by running the following:
+Another popular procedure is the t-test to compare two groups. 
+Let's compare the men and the women on the Extraversion variable by running the following:
 
 ```R
 t.test(df$Extraversion ~ df$Sex)
@@ -329,7 +357,8 @@ plot(df$Negative_Affect ~ df$Sex)
 
 ### Subsetting
 
-We have to be careful. Our results about the Sex difference on Negative Affect could be biased by another variable, namely the presence of a mood disorder. Indeed, as their prevalence is higher in women, it could bias the results by boosting the level of Negative Affect in women.
+We have to be careful. Our results about the Sex difference on Negative Affect could be biased by another variable, namely the presence of a mood disorder.
+Indeed, as their prevalence is higher in women, it could bias the results by boosting the level of Negative Affect in women.
 
 How to remove all the people that reported suffering from a mood disorder? First let's see how is organized this variable.
 ```R
@@ -340,9 +369,12 @@ It is a factor with two levels, "Presence" and "Absence". We want to keep only t
 ```R
 df <- subset(df, Mood_Disorder=="Absence")
 ```
-Ok so what it means is that we want a subset of "df", in which the variable Mood_Disorder equals to "Absence". Why two equals sign? Because it is not a statement that says this equals to this, but rather an evaluation ("when this equals to that, then it is true"). Other operators are ">", "<", "<=", ">=" and "!=" (for "not equal").
+Ok so what it means is that we want a subset of "df", in which the variable Mood_Disorder equals to "Absence". 
+Why two equals sign? Because it is not a statement that says this equals to this, but rather an evaluation ("when this equals to that, then it is true"). 
+Other operators are ">", "<", "<=", ">=" and "!=" (for "not equal").
 
-So now we have a dataframe with only the people that did not report suffering from a mood disorder. But wait... *we've overwrite our data!* by replacing the original object df with the new subset! 
+So now we have a dataframe with only the people that did not report suffering from a mood disorder. 
+But wait... *we've overwrite our data!* by replacing the original object df with the new subset! 
 
 **No worries, R is completely data safe. It never works directly on the data file. Unless you explicitly ask him to save something, it will never modify the external files.**
 So we can simply run the code again, from the beginning, whenever we want, to reload the original dataframe and do all these steps over again.
@@ -354,7 +386,10 @@ It is a lie. In R, many complex algorithms and statistical procedures are as sim
 
 ### ANOVAs & post-hocs
 
-The third widely used procedure is the Analysis Of Variance (aov). We will use this to see if there is an interaction between the Sex and the presence of Mood Disorder. First, we have to avoid the line of our script where we do the subsetting. But we don't need to remove it, we can simply *comment* it by adding a "#" at the beginning of the line (or by pressing CTRL + SHIFT + C). We can keep lines of code, or some comments about each line, that will not be ran when the code is executed.
+The third widely used procedure is the Analysis Of Variance (aov). We will use this to see if there is an interaction between the Sex and the presence of Mood Disorder. 
+First, we have to avoid the line of our script where we do the subsetting. 
+But we don't need to remove it, we can simply *comment* it by adding a "#" at the beginning of the line (or by pressing CTRL + SHIFT + C). 
+We can keep lines of code, or some comments about each line, that will not be ran when the code is executed.
 
 Then, rerun your script from the beginning (by clicking on the run button or by selecting all the script and pressing CTRL + ENTER). It should do, again, all the things we did, without the subsetting, resulting in a dataframe of 1327 observations.
 
@@ -397,7 +432,9 @@ TukeyHSD(results)
 
 ### Linear Modeling
 
-In fact, the correlation, the t-tests and the ANOVA we did are all a part of the same framework: linear modeling. Correlation is fitting a linear model with two (scaled and centered) numeric variables, t-test is a linear model with a numeric variable as the outcome variable and one factor with two levels as the predictor. And an ANOVA/MANOVA focuses on the effect of categorical predictors (factors).
+In fact, the correlation, the t-tests and the ANOVA we did are all a part of the same framework: linear modeling. 
+Correlation is fitting a linear model with two (scaled and centered) numeric variables, t-test is a linear model with a numeric variable as the outcome variable and one factor with two levels as the predictor. 
+And an ANOVA/MANOVA focuses on the effect of categorical predictors (factors).
 
 **Fitting linear models is a general procedure that withholds all the information, and that could replace the use of t-tests, anovas and correlations, if only we psychologists were used to read its output.**
 
@@ -426,7 +463,8 @@ fit <- lm(Negative_Affect ~ Sex, data=df)
 summary(fit)
 t.test(Negative_Affect~Sex, data=df, var.equal=TRUE)
 ```
-As you can see, the p value is the same. Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the β (the "beta", the slope), displayed under "Estimate" in the linear model output. If you're really rigid and tenacious, you might argue that the `t.test()` function gives us the confidence interval for the estimate...
+As you can see, the p value is the same. Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the β (the "beta", the slope), displayed under "Estimate" in the linear model output. 
+If you're really rigid and tenacious, you might argue that the `t.test()` function gives us the confidence interval for the estimate...
 
 ```R
 confint(fit)
