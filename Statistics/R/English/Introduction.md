@@ -271,7 +271,8 @@ cor.test(df$Age, Negative_Affect)
 ```
 
 Nice, you've run your first statistical test! :smile:
-Once you'll be used to it, doing statistics with R will be way quicker than with any other software.
+
+**Once you'll be used to it, doing statistics with R will be way quicker than with any other software.**
 
 
 The output is the following:
