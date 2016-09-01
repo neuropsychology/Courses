@@ -63,8 +63,8 @@ Somehow, I knew what I wanted to do: check the link between those two variables,
 I somehow managed to do it, and the year after that, I discovered R. 
 
 Interested by the possibility of automating statistical reports, creating pdfs with figures, results and all, being able to re-run an analysis from the start as many times as I wanted, I started to learn. 
-I was alone, nobody in my lab' was using it at that time, and it was hard: I was now lacking the therothetical notions that were thaught to me years ago. 
-But I eventually managed to get through. 
+Beside the unlimited ressources available from the internet, I was alone and nobody in my lab' was using it at that time. The learning curve was steep, indeed, I was now lacking the therothetical notions that were thaught to me years ago. 
+I eventually managed to get through, and iT's been now a couple of years since I use R on a daily basis...
 Long story short, I do now love statistics. 
 
 And that is, thanks to R.
