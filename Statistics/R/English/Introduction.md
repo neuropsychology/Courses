@@ -206,41 +206,42 @@ We can do it like that:
 summary(df)
 ```
 
-It will print, in the console, a summary of all the variables (note that there are better summary-like functions available from different packages, such as `describe()` from the psych package but let's stick with the native functions for now).
+It will print, in the console, a summary of all the variables (note that there are better summary-like functions available from different packages, such as `describe()` from the `psych` package, but let's stick with the base functions for now).
 
 
 ### Accessing Variables
 
 So, we have one object, called `"df"`, that is a dataframe, that itself contains 1327 rows and 20 *named* variables. 
-We can access each variable using the `$` sign, that is the equivalent of "in". For example, execute the following line:
+We can access each variable using the `$` sign, which roughly means "in". For example, execute the following line:
 ```R
 df$Age
 ```
 It will print, in the console, the variable "Age" that is stored *in* the object df. 
-Again, we can use the function we used above, `summary()`, on the variable. Run the following line:
+Again, we can use the function we used above, `summary()`, but this unique variable. Run the following line:
 
 ```R
 summary(df$Age)
 ```
 
-Or, we can ask specifically for the mean or the standard deviation (SD) by running the following:
+
+We can also ask specifically for the mean or the standard deviation (SD):
 
 ```R
 mean(df$Age)
 sd(df$Age)
 ```
 
-### Variable type
+### Variable Type
 
 Now try applying the `mean()` function on the Sex variable "`mean(df$Sex)`". 
 What happened? R throws an error message. 
 Indeed, Sex is not a **numeric variable**, but a **factor**. 
-And the mean of a factor makes not much sense.
+And the mean of a factor does not make much sense.
 
 It should also throw an error if we apply the function `mean()` on the Study_Level variable, which is a factor with 7 levels (coded from 0 to 7, 0 corresponding to primary school and 7 corresponding to a doctorate degree). 
 
 As you can see, R sees no problem and returns us a mean. Why? 
-Because it thinks that it is a numeric variable (In its defence, we must admit that it looks like it). 
+Because it thinks that it is a numeric variable (In its defence, we must admit that it looks very much like it, with all the levels being numeric). 
 Same goes for the Salary variable.
 
 **So before doing any analysis, make sure to check the type of your variables and convert them when necessary**.
@@ -269,7 +270,7 @@ To run a correlation test between the Age of the participant and the Negative Af
 cor.test(df$Age, Negative_Affect)
 ```
 
-Bravo, you've run your first statistical test! :smile:
+Nice, you've run your first statistical test! :smile:
 Once you'll be used to it, doing statistics with R will be way quicker than with any other software.
 
 
