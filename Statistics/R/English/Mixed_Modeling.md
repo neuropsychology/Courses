@@ -16,6 +16,11 @@ This course was crafted by psychologists, neuropsychologists and neuroscientists
 
 ## Why We Should All Use the Mixed Modeling Framework
 
+see: 
+
+[Magezi (2015)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4302710/)
+
+
 > Despite this preponderance of categorical data, the
 > use of statistical analyses that have long been known
 > to be questionable for caterogical data analysis (such as analysis of variance,
@@ -80,3 +85,16 @@ This course was crafted by psychologists, neuropsychologists and neuroscientists
 > namely repeated measures ANOVA [...] Our results suggest that the Linear Mixed Effects approach offers 
 > superior statistical power in detecting longitudinal group differences.
 > --[Bernal-Rusiel (2012)](http://www.sciencedirect.com/science/article/pii/S1053811912010683)
+
+
+## Examples
+
+post-hocs:
+```R
+library(lsmeans)
+library(lmerTest)
+lsmeans::lsmeans(fit, pairwise~Intensity)
+plot(lmerTest::lsmeans(fit))
+
+```
+
