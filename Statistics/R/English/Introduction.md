@@ -20,7 +20,7 @@ This course was crafted by psychologists, neuropsychologists and neuroscientists
 As such, it is a straightforward introduction to R with a special focus on how to get some actual results with it.
 It is not a programming course on R, nor a course on statistics *per se*.
 
-Note that there are other tutorials teaching R for psychological research, that are deeper, longer and more comprehensive (such as [this one](http://personality-project.org/r/) or [my favorite one](https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view
+Note that there are other tutorials teaching R for psychological research, that are deeper, longer and more comprehensive (such as [this one](http://personality-project.org/r/) or [my favourite one](https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view
 )).
 
 ### Contact
@@ -55,7 +55,7 @@ And, most importantly...
 ### Personal Experience
 
 I spent all my bachelor years with a mixed feeling toward statistics. Although I understood their importance for psychological science, I was just completely lost when following the classes. 
-I spent like three years learning theorethical stuff about the history of t-testing and, again, even if I realise its importance *now*, it just wasn't the right moment to teach that to students. 
+I spent like three years learning theoretical stuff about the history of t-testing and, again, even if I realise its importance *now*, it just wasn't the right moment to teach that to students. 
 Then, shortly after, we learn how to get some results with Statistica, by clicking here and there, and looking for the highlighted text that indicates that you're [lucky enough to have a significant effect](https://www.youtube.com/watch?v=5OL1RqHrZQ8). 
 I applied the methods and passed the exams, with no interest or understanding of statistics whatsoever. 
 
@@ -64,9 +64,9 @@ Somehow, I knew what I wanted to do: check the link between those two variables,
 I somehow managed to do it, and the year after that, I discovered R. 
 
 Interested by the possibility of automating statistical reports, creating pdfs with figures, results and all, being able to re-run an analysis from the start as many times as I wanted, I started to learn. 
-Beside the unlimited ressources available from the internet, I was alone and nobody in my lab' was using it at that time. The learning curve was steep, indeed, I was now lacking the therothetical notions that were thaught to me years ago. 
-I eventually managed to get through, and iT's been now a couple of years since I use R on a daily basis...
-Long story short, I do now love statistics. 
+Beside the unlimited resources available from the Internet, I was alone and nobody in my lab' was using it at that time. The learning curve was steep, indeed, I was now lacking the theoretical notions that were taught to me years ago. 
+I eventually managed to get through, and it's been now a couple of years since I use R on a daily basis...
+Long story short, I do now love statistics.
 
 And that is, thanks to R.
 
@@ -76,7 +76,7 @@ And that is, thanks to R.
 
 - R is complicated
 - It is hard to do some simple things
-- You need to know programing and coding
+- You need to know programming and coding
 - You need to be an expert of statistics
 
 ### Why R
@@ -90,7 +90,7 @@ And that is, thanks to R.
 - Gold standard across science
 - Reproducible research
 - Cutting-edge statistics and methods
-- Powerful data visualization
+- Powerful data visualisation
 - Data safe
 
 ### Think different
@@ -126,14 +126,14 @@ Click on [this link](https://www.rstudio.com/products/rstudio/download3/) and th
 
 ### First steps
 
-#### Initialization
+#### Initialisation
 
 Create a folder where you will store your project (the data, scripts, plots...). 
 Usually you would place your data in this folder. 
 For this training, we will use the "personality" dataset available within the neuropsychology package. 
 So right click on [this link](https://raw.githubusercontent.com/neuropsychology/neuropsychology.R/master/data/personality.csv) and select "save the link under" to download the dataset, which ends with .csv. 
 This format (.csv for comma separated values) is a standard light format used in statistics. 
-You can open those files with almost any softwares (including Excel, Statistica, etc.)
+You can open those files with almost any software (including Excel, Statistica, etc.)
 
 1. Once you have a folder (that you can name "Rcourse" for example), and the file personality.csv in it,
 2. Open RStudio. Click on file -> new file -> R script. Then click on "save as", navigate to your project directory and save it there, with the personality.csv file.
@@ -166,7 +166,7 @@ But from now on, we want to save the code we will create, so we won't type it di
 ### Our First Object: `df`
 
 `df` is a convention name for **dataframe**, which is the classic format of statistical data. 
-Is is organized into *variables*, the columns, that are named, and *observations*, the rows, that often are, in psychological science, participants.
+Is is organised into *variables*, the columns, that are named, and *observations*, the rows, that often are, in psychological science, participants.
 
 We want to read the csv and to store it in an object that we will call `df`. In the script panel, write the following:
 
@@ -364,7 +364,7 @@ We have to be careful. Our results about the Sex difference on Negative Affect c
 Indeed, as their prevalence is higher in women, it could bias the results by boosting the level of Negative Affect in women.
 
 How to remove all the people that reported suffering from a mood disorder?
-First let's see how this variable is organized.
+First let's see how this variable is organised.
 
 ```R
 summary(df$Mood_Disorder)
@@ -431,7 +431,7 @@ Mood_Disorder        1  116.4  116.40  59.839 2.03e-14 ***
 Sex:Mood_Disorder    1    3.8    3.76   1.931    0.165    
 Residuals         1323 2573.6    1.95                     
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
 ```
 
 The two predictors have a significant effect on the outcome variable, but their interaction is not significant. To take a look at the multiple comparisons (posthocs analysis), use the `TukeyHSD()` function:
@@ -442,8 +442,8 @@ TukeyHSD(results)
 
 ### Linear Modeling
 
-In fact, the correlation, the t-tests and the ANOVA we did are all a part of the same framework: linear modeling. 
-Correlation is fitting a linear model with two (scaled and centered) numeric variables. 
+In fact, the correlation, the t-tests and the ANOVA we did are all a part of the same framework: linear modelling. 
+Correlation is fitting a linear model with two (scaled and centred) numeric variables. 
 A t-test is a linear model with a numeric variable as the outcome variable and one factor with two levels as the predictor, and an ANOVA/MANOVA focuses on the effect of categorical predictors (factors).
 
 **Fitting linear models is a general procedure that withholds all the information, and that could replace the use of t-tests, ANOVAs and correlations, if only we psychologists were used to read its output.**
@@ -476,7 +476,7 @@ summary(fit)
 t.test(Negative_Affect~Sex, data=df, var.equal=TRUE)
 ```
 As you can see, the p value is the same. 
-Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the β (the "beta", the slope), displayed under "Estimate" in the linear model output. 
+Even more interesting, if you subtract the two means (the men's mean from the women's mean) displayed in the t-test output, it will give you... the value of the &#946; (the "beta", the slope), displayed under "Estimate" in the linear model output. 
 But still, if you're really rigid and tenacious, you might argue that the `t.test()` function gives us the confidence interval for the estimate that the `lm()` does not provide...
 
 ```R
@@ -530,7 +530,7 @@ In R, there are three ways of installing a package. For the majority of packages
   install.packages("devtools")
 ```
 
-This package contains a function that will allow to download unregistered (often *in development* packages(or packages of which the maintener is as lazy as me to register it officially)), such as the *neuropsychology* package.
+This package contains a function that will allow to download unregistered (often *in development* packages(or packages of which the maintainer is as lazy as me to register it officially)), such as the *neuropsychology* package.
 
 First, every time you start an R session, you need to *load* a package in order to use it:
 
