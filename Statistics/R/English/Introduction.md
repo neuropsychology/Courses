@@ -20,7 +20,7 @@ This course was crafted by psychologists, neuropsychologists and neuroscientists
 As such, it is a straightforward introduction to R with a special focus on how to get some actual results with it.
 It is not a programming course on R, nor a course on statistics *per se*.
 
-Note that there are other tutorials teaching R for psychological research, that are deeper, longer and more comprehensive (such as [this one](http://personality-project.org/r/) or [my favourite one](https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view
+Note that there are other more complete tutorials teaching R for psychological research (such as [this one](http://personality-project.org/r/) or [my favourite one](https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view
 )).
 
 ### Contact
