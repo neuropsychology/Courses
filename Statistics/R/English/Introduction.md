@@ -525,27 +525,15 @@ In R, there are three ways of installing a package. For the majority of packages
 - Directly use the `install.packages()` function. For example, we can download the "devtools" package by running the following command:
 
 ```R
-  install.packages("devtools")
+  install.packages("neuropsychology")
 ```
-
-This package contains a function that will allow to download unregistered (often *in development* packages(or packages of which the maintainer is as lazy as me to register it officially)), such as the *neuropsychology* package.
 
 First, every time you start an R session, you need to *load* a package in order to use it:
 
 ```R
-  library("devtools")
+  library("neuropsychology")
 ```
-
-This basically activates the package and loads its functions into your current package library.
-
-Then, we can use another function to download the neuropsychology package.
-
-```R
-  install_github("neuropsychology/neuropsychology.R")  # Download the package
-  library("neuropsychology")  # Load the package
-```
-
-This package contains the function `cortable()` that returns a correlation matrix with significance stars as well as a plot.
+The `neuropsychology` package contains the function `cortable()` that returns a correlation matrix with significance stars as well as a plot.
 
 ```R
   cortable(df)
