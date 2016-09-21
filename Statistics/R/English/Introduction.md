@@ -75,18 +75,18 @@ And that is, thanks to R.
 ### The Myth
 
 - R is complicated
-- It is hard to do some simple things
+- It is hard to do simple things
 - You need to know programming and coding
-- You need to be an expert of statistics
+- You need to be an statistics expert
 
 ### Why R
 
 - Born in 1993
 - Developed by statisticians
-- Free
+- 100% Free
 - Open-source 
 - Cross-platform Compatibility (Windows, MacOS, Linux...)
-- Robust community 
+- Huge support and community 
 - Gold standard across science
 - Reproducible research
 - Cutting-edge statistics and methods
@@ -152,7 +152,7 @@ That the working directory (where R will look for files and save things if asked
 
 Let's take a look at what we have now. A classic RStudio window is organized in 4 different panels:
 
-- **Script**: nothing more than a text editor where we will write and save our script. 
+- **Script**: nothing more than a text editor where we will write and save our code. 
 - **Console**: here lives the language R, where we can communicate with it.
 - **Environment**: a panel that will display the different variables, dataframes (which are all "objects") that we will create.
 - **Plots and Help**: a panel that will display the plots or the help for functions.
