@@ -81,8 +81,6 @@ And that is, thanks to R.
 
 ### Why R
 
-- Born in 1993
-- Developed by statisticians
 - 100% Free
 - Open-source 
 - Cross-platform Compatibility (Windows, MacOS, Linux...)
