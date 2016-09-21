@@ -134,7 +134,7 @@ This format (.csv for comma separated values) is a standard light format used in
 You can open those files with almost any software (including Excel, Statistica, etc.)
 
 1. Once you have a folder (that you can name "Rcourse" for example), and the file personality.csv in it,
-2. Open RStudio. Click on ==file -> new file -> R script==. Then click on ==save as==, navigate to your project directory and save it there, with the personality.csv file.
+2. Open RStudio. Click on `file -> new file -> R script`. Then click on `save as`, navigate to your project directory and save it there, with the personality.csv file.
 3. So now we have a project directory with, in it, a data file and the statistic script.
 
 However, we still have to tell R that this is the project directory we will be working in, and that when we say "read the file personality.csv", R will find it there.
