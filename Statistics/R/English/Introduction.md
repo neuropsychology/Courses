@@ -13,7 +13,7 @@
 
 | Course Status | ![](https://img.shields.io/badge/status-beta-brightorange.svg) |
 |---------------|---|
-| Length | ≈ 1h |
+| Length | ≈ 45min |
 
 
 This course was crafted by psychologists, neuropsychologists and neuroscientists for psychologists, neuropsychologists and neuroscientists.
