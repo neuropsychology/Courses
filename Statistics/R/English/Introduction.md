@@ -48,7 +48,7 @@ Add the end of this course, you will:
 
 And, most importantly...
 
-- [x] You won't be afraid of R or statistics anymore :bowtie:
+- [x] You won't be afraid of R or statistics anymore :muscle:
 
 ## About <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Rlogo.png/64px-Rlogo.png" height="40">
 
