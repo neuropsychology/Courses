@@ -81,15 +81,15 @@ And that is, thanks to R.
 
 ### Why R
 
-- 100% Free
-- Open-source 
-- Cross-platform Compatibility (Windows, MacOS, Linux...)
-- Huge support and community 
-- Gold standard across science
-- Reproducible research
-- Cutting-edge statistics and methods
-- Powerful data visualisation
-- Data safe
+- [x] 100% Free
+- [x] Open-source 
+- [x] Cross-platform Compatibility (Windows, MacOS, Linux...)
+- [x] Huge support and community 
+- [x] Gold standard across science
+- [x] Reproducible research
+- [x] Cutting-edge statistics and methods
+- [x] Powerful data visualisation
+- [x] Data safe
 
 ### Think different
 
