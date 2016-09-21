@@ -353,7 +353,7 @@ Instead of t-testing the differences between the two groups, we can also plot it
 plot(df$Negative_Affect ~ df$Sex)
 ```
 
-*[For a course on plotting, see this tutorial.] NOT AVAILABLE YET*
+For a course on plotting, see [this](https://github.com/neuropsychology/Courses/blob/master/Statistics/R/English/Plotting%20with%20ggplot2.md) tutorial.
 
 
 ### Subsetting
@@ -541,7 +541,7 @@ This basically activates the package and loads its functions into your current p
 Then, we can use another function to download the neuropsychology package.
 
 ```R
-  install_github("neuropsychology/neuropsychology.R", dependencies=TRUE)  # Download the package
+  install_github("neuropsychology/neuropsychology.R")  # Download the package
   library("neuropsychology")  # Load the package
 ```
 
