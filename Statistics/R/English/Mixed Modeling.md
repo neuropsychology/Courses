@@ -10,7 +10,7 @@
 
 ## About the course
 
-| Course Status | ![](https://img.shields.io/badge/status-dev-brightorange.svg) |
+| Course Status | ![](https://img.shields.io/badge/status-dev-brightred.svg) |
 |---------------|---|
 | Length | ≈ ...min |
 
