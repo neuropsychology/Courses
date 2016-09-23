@@ -539,6 +539,8 @@ The `neuropsychology` package contains the function `cortable()` that returns a 
   cortable(df)
 ```
 
+<p align="legt"><img src="https://github.com/neuropsychology/neuropsychology.R/blob/master/tests/testthat/cortable_plot.png" width="700"></p>
+
 ## That's it!
 
 :clap::clap::clap::clap:
