@@ -26,3 +26,16 @@ Note that there are other more complete tutorials teaching R for psychological r
 ### Contact
 
 For remarks, complaints, suggestions or anything else, you can contact the creator of this course via  [Linkedin](https://fr.linkedin.com/in/dominiquemakowski), email (<dom.makowski@gmail.com>) or by creating an issue on this repository.
+
+
+### Create Variables and Merge
+
+### Select and Filter
+
+- select()
+  - ends_with() = Select columns that end with a character string
+  - contains() = Select columns that contain a character string
+  - matches() = Select columns that match a regular expression
+  - one_of() = Select columns names that are from a group of names
+- filte()
+
