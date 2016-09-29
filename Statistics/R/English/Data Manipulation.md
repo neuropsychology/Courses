@@ -27,8 +27,25 @@ Note that there are other more complete tutorials teaching R for psychological r
 
 For remarks, complaints, suggestions or anything else, you can contact the creator of this course via  [Linkedin](https://fr.linkedin.com/in/dominiquemakowski), email (<dom.makowski@gmail.com>) or by creating an issue on this repository.
 
+### The Pipe Operator %>%
 
-### Create Variables and Merge
+### Create Variables
+- On the fly
+
+- mutate()
+
+### Rename Variables, Levels and Relevel
+
+- rename()
+
+- factor(labels=) [rename levels]
+
+- factor(levels=) [reorder levels]
+
+### Arrange
+- arrange()
+- spread()
+- separate()
 
 ### Select and Filter
 
@@ -37,5 +54,26 @@ For remarks, complaints, suggestions or anything else, you can contact the creat
   - contains() = Select columns that contain a character string
   - matches() = Select columns that match a regular expression
   - one_of() = Select columns names that are from a group of names
-- filte()
+  - num_range(x, i:j)
+- filter()
+  - (>, <, >=, <=, !=, %in%)
+  - (&, |)
+  
+### Group by
 
+- group_by()
+- summarise()
+  - n()
+
+### Reshape
+
+tidyr
+
+- gather()
+- separate()
+- spread()
+
+### Merge
+- full_join()
+- bind_rows()
+- bind_cols()
