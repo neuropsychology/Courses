@@ -11,7 +11,7 @@
 ## About the course
 
 
-| Course Status | ![](https://img.shields.io/badge/status-beta-brightorange.svg) |
+| Course Status | ![](https://img.shields.io/badge/status-open-brightgreen.svg) |
 |---------------|---|
 | Length | ≈ 45min |
 
