@@ -1,6 +1,12 @@
+<p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
+
+*<p align="center">Supported by the École de Neuropsychologie group</p>*
+
+---
+
 # Learn
 
-Here you will find Tutorials and Courses for Statistics, Programming and more
+Here you will find Tutorials and Courses for Statistics, Programming, Neuroscience, Psychology and more
 
 |Status|![](https://img.shields.io/badge/status-open-brightgreen.svg)|
 |----------------|---|
@@ -8,7 +14,7 @@ Here you will find Tutorials and Courses for Statistics, Programming and more
 
 
 
-# How to contribute
+# How to Contribute
 
 You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things.
 
