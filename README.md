@@ -4,7 +4,7 @@ Here you will find Tutorials and Courses for Statistics, Programming and more
 
 |Status|![](https://img.shields.io/badge/status-open-brightgreen.svg)|
 |----------------|---|
-|Authors|Dominique Makowski<br>Laurie Compère|
+|Authors|[Dominique Makowski](https://biblineuropsy.files.wordpress.com/2016/09/cv_dominiquemakowski.pdf)|
 
 
 
