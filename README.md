@@ -26,4 +26,4 @@ You found some errors? Something was unclear? You can contribute to the courses 
 5. **Documentation**: Don't forget to cite the papers (and add a link to the paper)
 
 
-See [this video](https://www.youtube.com/watch?v=yr6IzOGoMsQ) for a clear explanation.
+
