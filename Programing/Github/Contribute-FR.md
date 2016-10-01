@@ -40,18 +40,17 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/10.png" width="900"></p>
 
-# 10. Puis cliquez sur "Apercu des changements"
+# 10. Cliquez sur "Apercu des changements" puis, si vous êtes satisfait, proposez vos changements (n'oubliez pas d'ajouter une petite description)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/11.png" width="900"></p>
 
-# 11. Si vous êtes satisfait, proposez vos changements (n'oubliez pas d'ajouter une petite description)
+# 11. Créez ensuite une "pull request", une proposition de changements
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/12.png" width="900"></p>
 
-# 12. Créez ensuite une "pull request", une proposition de changements
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/13.png" width="900"></p>
 
-# 13. Les administrateurs verront ensuite votre proposition et pourront l'accepter :)
+# 12. Les administrateurs verront ensuite votre proposition et pourront l'accepter :)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/14.png" width="900"></p>
