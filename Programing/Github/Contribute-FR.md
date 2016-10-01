@@ -12,7 +12,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/4.png" width="900"></p>
 
-# 4. Remplissez ou passer le petit sondage
+# 4. Remplissez ou passez le petit sondage
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/5a.png" width="900"></p>
 
