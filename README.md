@@ -20,6 +20,8 @@ Here you will find Tutorials and Courses for Statistics, Programming, Neuroscien
 
 You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things. See this tutorial ([French](https://github.com/neuropsychology/Courses/blob/master/Programing/Github/Contribute-FR.md) or [English](https://github.com/neuropsychology/Courses/blob/master/Programing/Github/Contribute-EN.md)) to see to add your changes on github.
 
+You can alo create "issues" to report bug, errors or requests by clicking on the "Issues" button.
+
 ### General Guidelines:
 1. **Quality over quantity**: better write a great small paragraph than an entire mediocre course
 2. **Perfection don't matter**: Don't worry to write something not perfect: the community will improve it
