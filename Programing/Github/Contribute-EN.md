@@ -40,18 +40,16 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/10.png" width="900"></p>
 
-# 10. Preview the changes
+# 10. Preview the changes. Once satisfied, submit your changes (don't forget adding a small description)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/11.png" width="900"></p>
 
-# 11. Once satisfied, submit your changes (don't forget adding a small description)
+# 11. Create a "pull request"
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/12.png" width="900"></p>
 
-# 12. Create a "pull request"
-
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/13.png" width="900"></p>
 
-# 13. The admins will then see your change proposition and accept it :)
+# 12. The admins will then see your change proposition and accept it :)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/14.png" width="900"></p>
