@@ -28,7 +28,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/7b.png" width="900"></p>
 
-# 7. Naviguez jusqu'au fichier que vous voulez modifier et cliquez dessus (vous pouvez aussi créer un nouveau fichier
+# 7. Naviguez jusqu'au fichier que vous voulez modifier et cliquez dessus (vous pouvez aussi créer un nouveau fichier)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/8.png" width="900"></p>
 
@@ -44,7 +44,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/11.png" width="900"></p>
 
-# 11. Si vous êtes satisfait, proposez vos changements (n'oubliez pas d'ajouter 2-3 éléments explicatifs)
+# 11. Si vous êtes satisfait, proposez vos changements (n'oubliez pas d'ajouter une petite description)
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/12.png" width="900"></p>
 
