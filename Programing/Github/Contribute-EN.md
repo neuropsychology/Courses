@@ -8,7 +8,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/3.png" width="900"></p>
 
-# 3. Leave the default seettings et continue
+# 3. Leave the default settings et continue
 
 <p align="center"><img src="https://raw.githubusercontent.com/neuropsychology/Courses/master/Programing/Github/Illustrations/4.png" width="900"></p>
 
