@@ -25,8 +25,7 @@ Note that there are other more complete tutorials teaching R for psychological r
 
 ### Contact
 
-For remarks, complaints, suggestions or anything else, you can contact the creator of this course via  [Linkedin](https://fr.linkedin.com/in/dominiquemakowski), email (<dom.makowski@gmail.com>) or by creating an issue on this repository.
-
+For remarks, complaints, suggestions or anything else, please create an [issue](https://github.com/neuropsychology/Courses/issues).
 
 
 ### Outline
