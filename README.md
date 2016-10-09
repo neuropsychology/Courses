@@ -23,11 +23,11 @@ You found some errors? Something was unclear? You can contribute to the courses 
 You can alo create "issues" to report bug, errors or requests by clicking on the "Issues" button.
 
 ### General Guidelines:
-1. **Quality over quantity**: better write a great small paragraph than an entire mediocre course
-2. **Perfection don't matter**: Don't worry to write something not perfect: the community will improve it
-3. **Imrove it yourself**: Do not hesitate to modify and improve existing courses
-4. **Science science science**: Everything must be scientifically valid (based on *recent* evidence)
-5. **Documentation**: Don't forget to cite the papers (and add a link to its online page)
+1. **Quality over quantity**: better write a clean small paragraph rather than an entire mediocre course.
+2. **Perfection doesn't matter**: Don't worry to write something not perfect: the community will improve it.
+3. **Imrove it yourself**: Do not hesitate to modify and improve existing courses.
+4. **Science science science**: Everything must be scientifically valid (based on *recent* evidence).
+5. **Documentation**: Don't forget to cite the papers (and add a link to its online page).
 
 
 
