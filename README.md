@@ -12,7 +12,7 @@ Here you will find Tutorials and Courses for Statistics, Programming, Neuroscien
 
 |Status|![](https://img.shields.io/badge/status-open-brightgreen.svg)|
 |----------------|---|
-|Authors|[Dominique Makowski](https://biblineuropsy.files.wordpress.com/2016/09/cv_dominiquemakowski.pdf)|
+|Authors|[Dominique Makowski](https://github.com/neuropsychology/Organization/blob/master/CVs/DominiqueMakowski.pdf)|
 
 
 
