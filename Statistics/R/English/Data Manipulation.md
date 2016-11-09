@@ -32,48 +32,48 @@ For remarks, complaints, suggestions or anything else, you can contact the creat
 ### Create Variables
 - On the fly
 
-- mutate()
+- `mutate()`
 
 ### Rename Variables, Levels and Relevel
 
-- rename()
+- `rename()`
 
-- factor(labels=) [rename levels]
+- `factor(labels=)` [rename levels]
 
-- factor(levels=) [reorder levels]
+- `factor(levels=)` [reorder levels]
 
 ### Arrange
-- arrange()
-- spread()
-- separate()
+- `arrange()`
+- `spread()`
+- `separate()`
 
 ### Select and Filter
 
-- select()
-  - ends_with() = Select columns that end with a character string
-  - contains() = Select columns that contain a character string
-  - matches() = Select columns that match a regular expression
-  - one_of() = Select columns names that are from a group of names
-  - num_range(x, i:j)
-- filter()
-  - (>, <, >=, <=, !=, %in%)
-  - (&, |)
+- `select()`
+ - `ends_with()` = Select columns that end with a character string
+ - `contains()` = Select columns that contain a character string
+ - `matches()` = Select columns that match a regular expression
+ - `one_of()` = Select columns names that are from a group of names
+ - `num_range(x, i:j)`
+- `filter()`
+ - `(>, <, >=, <=, !=, %in%)`
+ - `(&, |)`
   
 ### Group by
 
-- group_by()
-- summarise()
-  - n()
+- `group_by()`
+- `summarise()`
+ - `n()`
 
 ### Reshape
 
 tidyr
 
-- gather()
-- separate()
-- spread(df, levels_to_columns, values)
+- `gather()`
+- `separate()`
+- `spread(df, levels_to_columns, values)`
 
 ### Merge
-- full_join()
-- bind_rows()
-- bind_cols()
+- `full_join()`
+- `bind_rows()`
+- `bind_cols()`
