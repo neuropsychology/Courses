@@ -71,7 +71,7 @@ tidyr
 
 - gather()
 - separate()
-- spread()
+- spread(df, levels_to_columns, values)
 
 ### Merge
 - full_join()
