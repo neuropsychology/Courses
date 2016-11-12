@@ -21,7 +21,7 @@ Here you will find Tutorials and Courses for Statistics, Programming, Neuroscien
 
 # How to Contribute
 
-You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things. See [this tutorial](https://github.com/neuropsychology/Courses/blob/master/docs/Contribute/Contribute.md) to see to add your changes on github.
+You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things. See [this tutorial](https://github.com/neuropsychology/Courses/blob/master/docs/Contributing/Contribute.md) to see to add your changes on github.
 
 You can alo create "issues" to report bug, errors or requests by clicking on the "Issues" button.
 
