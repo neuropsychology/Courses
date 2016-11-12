@@ -422,6 +422,16 @@ Dependencies
 - pygame 1.9.2
 
 
+-------
+# colors list
+
+|Type|Colours|
+|----|-------|
+|Primary|![](https://img.shields.io/badge/white-255--255--255-green.svg?colorB=FFFFFF)![](https://img.shields.io/badge/black-0--0--0-green.svg?colorB=000000)![](https://img.shields.io/badge/black-128--128--128-green.svg?colorB=808080)![](https://img.shields.io/badge/raw_red-255--0--0-green.svg?colorB=ff0000)![](https://img.shields.io/badge/raw_green-0--255--0-green.svg?colorB=00ff00)![](https://img.shields.io/badge/raw_blue-0--0--255-green.svg?colorB=0000ff)|
+|Design|![](https://img.shields.io/badge/red-244--67--54-green.svg?colorB=f44336)![](https://img.shields.io/badge/pink-233--30--99-green.svg?colorB=E91E63)![](https://img.shields.io/badge/purple-156--39--176-green.svg?colorB=9C27B0)![](https://img.shields.io/badge/deeppurple-103--58--183-green.svg?colorB=673AB7)![](https://img.shields.io/badge/indigo-63--81--181-green.svg?colorB=3F51B5)![](https://img.shields.io/badge/blue-33--150--243-green.svg?colorB=2196F3)|
+
+
+
 
 
 -------
