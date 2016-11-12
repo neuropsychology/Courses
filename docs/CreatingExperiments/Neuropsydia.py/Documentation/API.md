@@ -36,10 +36,9 @@ Dependencies
 - pygame 1.9.2
 - time
 
+
+
 ------
-
-
-
 # Time.reset()
 
 Reset the clock of the Time object.
@@ -69,3 +68,453 @@ Dependencies
 ----------
 - pygame 1.9.2
 - time
+
+
+-------
+# Time.control(frequency=60)
+
+Control time. Must be placed in a while loop and, each time the program runs through it, checks if the time passed is less than a certain amount (the frequency, by default 60, so 1/60 seconds). If true, the program stops and wait what needed before continuing, so that each loop takes at least 1/frequency seconds to be complete.
+
+Parameters
+----------
+frequency = int, optional
+The minimum frequency you want the loop to run at
+
+Returns
+----------
+None
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> while n.time.get() < 5:
+>>>     n.time.control()
+>>>     print(n.time.get())
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+-------
+# Time.get(reset=True)
+
+Get time since last initialisation / reset.
+
+Parameters
+----------
+reset = bool, optional
+	Should the clock be reset after returning time?
+
+Returns
+----------
+float
+	Time passed in milliseconds.
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> time_passed_since_neuropsydia_loading = n.time.get()
+>>> n.time.reset()
+>>> time_passed_since_reset = n.time.get()
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+
+-------
+# Time.wait(time_to_wait, unit="ms", frequency=60, round_by_frame=True, skip=None)
+
+Wait some time.
+
+Parameters
+----------
+time_to_wait = int
+	Time to wait
+unit = str
+	"min" for minutes, "s" for seconds, "ms" for milliseconds, or "frame" for a certain amount of frames (depending on the frequency parameter)
+frequency = int
+	should be a multiple of your monitor's refresh rate
+round by frame = bool
+	should the waiting time be rounded to match an exact number of frame / refresh cycles? (e.g., on a 60Hz monitor, 95ms will be rounded to 100, because the monitor is refreshed every 16.6667ms)
+skip = str
+	Shoud there be a key to skip the waiting. Default to None.
+
+Returns
+----------
+float
+	Actual time waited in milliseconds
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+
+>>> n.write("let's wait 500ms", round_by_frame = False)
+>>> n.refresh()
+>>> wait_time = n.time.wait(520)
+>>> n.newpage("white")
+>>> n.write("I waited for " + str(wait_time) + "ms")
+>>> n.refresh()
+>>> wait_time = n.time.wait(520, round_by_frame = True)
+>>> n.newpage("white")
+>>> n.write("I waited for " + str(wait_time) + "ms")
+>>> n.refresh()
+>>> n.time.wait(3, unit = "s")
+
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+
+-------
+# newpage(color_name="white", opacity=100, fade=False, fade_speed=60, fade_type="out", auto_refresh=True)
+
+
+Fill the background with a color.
+
+Parameters
+----------
+color_name = str, tuple, optional
+name of the color (see color() function), or an RGB tuple (e.g., (122,84,01))
+opacity = int, optional
+opacity of the color (in percents)
+fade = bool, optional
+do you want a fade effect?
+fade_speed = int, optional
+frequency (speed) of the fading
+fade_type = str, optional
+"out" or "in", fade out or fade in
+
+Returns
+----------
+None
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> n.newpage("blue")
+>>> n.refresh()
+>>> n.time.wait(500)
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+
+-------
+# refresh()
+
+Reresh / flip the screen, actually display things on screen (to use after image(), write() or newpage()).
+
+Parameters
+----------
+None
+
+Returns
+----------
+None
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> n.newpage("blue")
+>>> n.refresh()
+>>> n.time.wait(500)
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+
+
+
+-------
+# wait_for_input(time_max=None)
+
+Low level input checker.
+
+Parameters
+----------
+time_max = int
+time max in ms
+
+Returns
+----------
+key
+A key.
+Example
+----------
+NA
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+
+-------
+# response(allow=None, enable_escape=True, time_max=None, get_RT=True)
+
+Get a (keyboard, for now) response.
+
+Parameters
+----------
+allow = str or list
+keys to allow
+enable_escape = bool
+enable escape to exit
+time_max = int
+maximum time to wait for a response (ms)
+get_RT = bool
+return response time
+
+Returns
+----------
+str or (str, int)
+returns a tuple when get_RT is set to True
+Example
+----------
+NA
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+- time
+
+
+
+-------
+# Coordinates()
+
+A class object to go from pygame corrdinates system to neuropsydia's and vice versa.
+
+Its methods (functions) are:
+- to_pygame()
+- from_pygame()
+
+Parameters
+----------
+None
+
+Returns
+----------
+None
+
+Example
+----------
+None
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+
+
+
+
+-------
+# Coordinates.to_pygame(x=None, y=None, distance_x=None, distance_y=None)
+
+Convert coordinates from neuropsydia (-10:10) to pygame's system (in pixels).
+
+Parameters
+----------
+x = float
+	[-10:10]
+y = float
+	[-10:10]
+distance_x = convert a horizontal distance
+	[-10:10]
+distance_y = convert a horizontal distance
+	[-10:10]
+Returns
+----------
+NA
+
+Example
+----------
+NA
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+
+
+
+
+-------
+# Coordinates.from_pygame(x=None, y=None)
+
+Help incomplete, sorry.
+
+Parameters
+----------
+NA
+
+Returns
+----------
+NA
+
+Example
+----------
+NA
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+- pygame 1.9.2
+
+
+
+
+-------
+# color(color)
+
+Returns an RGB color tuple (or list) from its name.
+
+Parameters
+----------
+color = str
+one from the color_list list
+
+Returns
+----------
+tuple or list
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> print(n.color_list)
+>>> print(n.color("blue"))
+>>> n.close()
+
+Authors
+----------
+Dominique Makowski
+
+Dependencies
+----------
+None
+
+
+
+-------
+# cursor(visible=True)
+
+Set the mouse cursor to visible or invisible.
+
+Parameters
+----------
+visible = bool
+True for visible, False for invisible.
+
+Returns
+----------
+None
+
+Example
+----------
+>>> import neuropsydia as n
+>>> n.start()
+>>> n.cursor(True)
+>>> n.time.wait(2000)
+>>> n.close()
+
+Authors
+----------
+The pygame team
+
+Dependencies
+----------
+- pygame 1.9.2
+
+
+
+-------
+# Time.control()
+
+
+
+-------
+# Time.control()
+
+
+
+-------
+# Time.control()
+
+
+
+-------
+# Time.control()
+
+
+
+-------
+# Time.control()
+
+
+
+-------
+# Time.control()
+
+
+

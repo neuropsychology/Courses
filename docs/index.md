@@ -2,7 +2,7 @@
 
 Here, you will find Courses on Neuropsychology, Statistics, Programming and more.
 
-<p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
+<p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="350"></p>
 
 
 
