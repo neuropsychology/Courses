@@ -1,7 +1,7 @@
 site_name: École de Neuropsychologie
 theme: readthedocs
-site_description: 'Courses on Neuropsychology, Statistics, Programming and more.'
-site_author: 'Dominique Makowski'
+site_description: Courses on Neuropsychology, Statistics, Programming and more.
+site_author: Dominique Makowski
 repo_url: https://github.com/neuropsychology/Courses/
 
 pages:
@@ -11,6 +11,7 @@ pages:
 - Creating Experiments and Tests:
   - Neuropsydia.py:
     - Documentation:
+      - API: CreatingExperiments/Neuropsydia.py/Documentation/API.md
     - Tutorials:
       - 1. Novice:
         - 1. Getting Started: CreatingExperiments/Neuropsydia.py/Tutorials/Novice/Getting_Started.md
