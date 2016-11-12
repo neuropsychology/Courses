@@ -1,36 +1,17 @@
-<p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
+# Welcome to MkDocs
 
-*<p align="center">Supported by the École de Neuropsychologie group</p>*
+For full documentation visit [mkdocs.org](http://mkdocs.org).
 
----
+## Commands
 
-# Learn
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs help` - Print this help message.
 
-Here you will find Tutorials and Courses for Statistics, Programming, Neuroscience, Psychology and more.
+## Project layout
 
-
-# Content
-
-- Clinical Practice
-- Creating Experiments and Tests
-- Statistics
-- Contributing
-
-
-
-
-# How to Contribute
-
-You found some errors? Something was unclear? You can contribute to the courses by modifying or adding things. See [this tutorial](https://github.com/neuropsychology/Courses/blob/master/docs/Contributing/Contribute.md) to see to add your changes on github.
-
-You can alo create "issues" to report bug, errors or requests by clicking on the "Issues" button.
-
-### General Guidelines
-1. **Quality over quantity**: better write a clean small paragraph rather than an entire mediocre course.
-2. **Perfection doesn't matter**: Don't worry to write something not perfect: the community will improve it.
-3. **Imrove it yourself**: Do not hesitate to modify and improve existing courses.
-4. **Science science science**: Everything must be scientifically valid (based on *recent* evidence).
-5. **Documentation**: Don't forget to cite the papers (and add a link to its online page).
-
-
-
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
