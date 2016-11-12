@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Welcome to the École de Neuropsychologie
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Here, you will find Courses on Neuropsychology, Statistics, Programming and more.
 
-## Commands
+<p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Content
+
+Our courses, although under development, aim to cover all the expertise areas of a proper neuropsychologists, including theorethical knowledge, research techniques and clinical practice.
+
