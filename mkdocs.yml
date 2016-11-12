@@ -1,6 +1,0 @@
-site_name: École de Neuropsychologie
-repo_url: https://github.com/neuropsychology/Courses
-pages:
- - Home: index.md
- - About: about.md
- theme: readthedocs
