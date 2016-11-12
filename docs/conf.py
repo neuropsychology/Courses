@@ -15,7 +15,7 @@
 import sys
 import os
 import shlex
-import sphinx_bootstrap_theme
+
 
 
 # To be able to import to ReadTheDocs
@@ -140,7 +140,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'bootstrap'  # default
+html_theme = 'default'  # default, bootstrap
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
