@@ -1,5 +1,4 @@
-#<p align="center">Creating Experiments with Python and Neuropsydia</p>
-##<p align="center">Part 1.0: Getting Started</p>
+<p align="center">Part 1.1: Getting Started</p>
 **<p align="center">Dominique Makowski</p>**
 
 <p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
@@ -28,11 +27,11 @@ For remarks, complaints, suggestions or anything else, please create an [issue](
 ## Installation
 
 - Windows
- - 1. If you don't have any python distribution installed, download [winpython](https://winpython.github.io/) (version 3.5, without `Qt5` at the end). Choose a 32bits or 64bits version (choose 32bits if you're not sure, it works everywhere)
- - 2. Install winpython somewhere (for example your desktop)
- - 3. Within the winpython folder, find and open `WinPython Command Prompt.exe`
- - 4. Paste the following line and press enter: `pip install https://github.com/neuropsychology/Neuropsydia.py/zipball/master`
- - 5. Wait until the end of the download
+  - 1. If you don't have any python distribution installed, download [winpython](https://winpython.github.io/) (version 3.5, without `Qt5` at the end). Choose a 32bits or 64bits version (choose 32bits if you're not sure, it works everywhere)
+  - 2. Install winpython somewhere (for example your desktop)
+  - 3. Within the winpython folder, find and open `WinPython Command Prompt.exe`
+  - 4. Paste the following line and press enter: `pip install https://github.com/neuropsychology/Neuropsydia.py/zipball/master`
+  - 5. Wait until the end of the download
 
 ## Hands on!
 
