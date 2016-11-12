@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/courses/badge/?version=latest)](http://courses.readthedocs.io/en/latest/?badge=latest)
+
 #<p align="center">COURSES</p>
 
 <p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
