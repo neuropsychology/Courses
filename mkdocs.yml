@@ -1,7 +1,7 @@
 site_name: École de Neuropsychologie
 theme: readthedocs
-site_description: Courses on Neuropsychology, Statistics, Programming and more.
-site_author: Dominique Makowski
+site_description: 'Courses on Neuropsychology, Statistics, Programming and more.'
+site_author: 'Dominique Makowski'
 repo_url: https://github.com/neuropsychology/Courses/
 
 pages:
@@ -26,7 +26,6 @@ pages:
   - Python:
     - Signal Processing:
       - EDA: DataScience/Python/SignalProcessing/EDA.md
-- Contributing: Contributing/Contribute.md
 - Contributing: Contributing/Contribute.md
 - About:
   - People: About/people.md
