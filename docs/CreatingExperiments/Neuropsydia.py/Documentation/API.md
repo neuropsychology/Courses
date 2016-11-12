@@ -9,16 +9,16 @@ See those for further informations.
 
 Note that by default, there is already a Time class object called "time" (lowercase) that is initialized at neuropsydia's loading. For the sake of clarity, use this one (e.g., n.time.wait() ), especially for wait() and control() functions.
 
-Parameters
-----------
+### Parameters
+
 None
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> myclock = n.Time()
@@ -27,12 +27,12 @@ Example
 >>> time_passed_since_reset = myclock.get()
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -43,16 +43,16 @@ Dependencies
 
 Reset the clock of the Time object.
 
-Parameters
-----------
+### Parameters
+
 None
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> time_passed_since_neuropsydia_loading = n.time.get()
@@ -60,12 +60,12 @@ Example
 >>> time_passed_since_reset = n.time.get()
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -75,17 +75,17 @@ Dependencies
 
 Control time. Must be placed in a while loop and, each time the program runs through it, checks if the time passed is less than a certain amount (the frequency, by default 60, so 1/60 seconds). If true, the program stops and wait what needed before continuing, so that each loop takes at least 1/frequency seconds to be complete.
 
-Parameters
-----------
+### Parameters
+
 frequency = int, optional
 The minimum frequency you want the loop to run at
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> while n.time.get() < 5:
@@ -93,12 +93,12 @@ Example
 >>>     print(n.time.get())
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -108,18 +108,18 @@ Dependencies
 
 Get time since last initialisation / reset.
 
-Parameters
-----------
+### Parameters
+
 reset = bool, optional
 	Should the clock be reset after returning time?
 
-Returns
-----------
+### Returns
+
 float
 	Time passed in milliseconds.
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> time_passed_since_neuropsydia_loading = n.time.get()
@@ -127,12 +127,12 @@ Example
 >>> time_passed_since_reset = n.time.get()
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -143,8 +143,8 @@ Dependencies
 
 Wait some time.
 
-Parameters
-----------
+### Parameters
+
 time_to_wait = int
 	Time to wait
 unit = str
@@ -156,13 +156,13 @@ round by frame = bool
 skip = str
 	Shoud there be a key to skip the waiting. Default to None.
 
-Returns
-----------
+### Returns
+
 float
 	Actual time waited in milliseconds
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 
@@ -180,12 +180,12 @@ Example
 
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -197,8 +197,8 @@ Dependencies
 
 Fill the background with a color.
 
-Parameters
-----------
+### Parameters
+
 color_name = str, tuple, optional
 name of the color (see color() function), or an RGB tuple (e.g., (122,84,01))
 opacity = int, optional
@@ -210,12 +210,12 @@ frequency (speed) of the fading
 fade_type = str, optional
 "out" or "in", fade out or fade in
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> n.newpage("blue")
@@ -223,12 +223,12 @@ Example
 >>> n.time.wait(500)
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -239,16 +239,16 @@ Dependencies
 
 Reresh / flip the screen, actually display things on screen (to use after image(), write() or newpage()).
 
-Parameters
-----------
+### Parameters
+
 None
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> n.newpage("blue")
@@ -256,12 +256,12 @@ Example
 >>> n.time.wait(500)
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 
 
@@ -271,25 +271,25 @@ Dependencies
 
 Low level input checker.
 
-Parameters
-----------
+### Parameters
+
 time_max = int
 time max in ms
 
-Returns
-----------
+### Returns
+
 key
 A key.
-Example
-----------
+### Example
+
 NA
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -300,8 +300,8 @@ Dependencies
 
 Get a (keyboard, for now) response.
 
-Parameters
-----------
+### Parameters
+
 allow = str or list
 keys to allow
 enable_escape = bool
@@ -311,20 +311,20 @@ maximum time to wait for a response (ms)
 get_RT = bool
 return response time
 
-Returns
-----------
+### Returns
+
 str or (str, int)
-returns a tuple when get_RT is set to True
-Example
-----------
+### Returns a tuple when get_RT is set to True
+### Example
+
 NA
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 - time
 
@@ -339,24 +339,24 @@ Its methods (functions) are:
 - to_pygame()
 - from_pygame()
 
-Parameters
-----------
+### Parameters
+
 None
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 None
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 
 
@@ -367,8 +367,8 @@ Dependencies
 
 Convert coordinates from neuropsydia (-10:10) to pygame's system (in pixels).
 
-Parameters
-----------
+### Parameters
+
 x = float
 	[-10:10]
 y = float
@@ -377,20 +377,20 @@ distance_x = convert a horizontal distance
 	[-10:10]
 distance_y = convert a horizontal distance
 	[-10:10]
-Returns
-----------
+### Returns
+
 NA
 
-Example
-----------
+### Example
+
 NA
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 
 
@@ -401,24 +401,24 @@ Dependencies
 
 Help incomplete, sorry.
 
-Parameters
-----------
+### Parameters
+
 NA
 
-Returns
-----------
+### Returns
+
 NA
 
-Example
-----------
+### Example
+
 NA
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 
 
@@ -438,31 +438,31 @@ Dependencies
 -------
 # color(color)
 
-Returns an RGB color tuple (or list) from its name.
+### Returns an RGB color tuple (or list) from its name.
 
-Parameters
-----------
+### Parameters
+
 color = str
 one from the color_list list
 
-Returns
-----------
+### Returns
+
 tuple or list
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> print(n.color_list)
 >>> print(n.color("blue"))
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 Dominique Makowski
 
-Dependencies
-----------
+### Dependencies
+
 None
 
 
@@ -472,29 +472,29 @@ None
 
 Set the mouse cursor to visible or invisible.
 
-Parameters
-----------
+### Parameters
+
 visible = bool
 True for visible, False for invisible.
 
-Returns
-----------
+### Returns
+
 None
 
-Example
-----------
+### Example
+
 >>> import neuropsydia as n
 >>> n.start()
 >>> n.cursor(True)
 >>> n.time.wait(2000)
 >>> n.close()
 
-Authors
-----------
+### Authors
+
 The pygame team
 
-Dependencies
-----------
+### Dependencies
+
 - pygame 1.9.2
 
 
