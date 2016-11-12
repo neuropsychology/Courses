@@ -1,7 +1,3 @@
-
-
-#<p align="center">COURSES</p>
-
 <p align="center"><img src="https://biblineuropsy.files.wordpress.com/2016/08/n.png" width="200"></p>
 
 *<p align="center">Supported by the École de Neuropsychologie group</p>*
@@ -12,10 +8,15 @@
 
 Here you will find Tutorials and Courses for Statistics, Programming, Neuroscience, Psychology and more.
 
-|Status|![](https://img.shields.io/badge/status-open-brightgreen.svg)|
-|----------------|---|
-|Authors|[Dominique Makowski](https://github.com/neuropsychology/Organization/blob/master/CVs/DominiqueMakowski.pdf)|
-|Documentation|[![Documentation Status](https://readthedocs.org/projects/courses/badge/?version=latest)](http://courses.readthedocs.io/en/latest/?badge=latest)|
+
+# Content
+
+- Clinical Practice
+- Creating Experiments and Tests
+- Statistics
+- Contributing
+
+
 
 
 # How to Contribute
