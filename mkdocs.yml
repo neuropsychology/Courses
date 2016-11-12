@@ -1,0 +1,5 @@
+site_name: École de Neuropsychologie
+pages:
+ - Home: index.md
+ - About: about.md
+ theme: readthedocs
