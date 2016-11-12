@@ -8,8 +8,12 @@ pages:
   - Neuropsydia.py:
     - Documentation:
       - Tutorials:
-        - Novice: CreatingExperiments/Neuropsydia.py/Tutorials/Novice.md
-        - Apprentice: CreatingExperiments/Neuropsydia.py/Tutorials/Apprentice.md
+        - 1. Novice:
+          - 1. Getting Started: CreatingExperiments/Neuropsydia.py/Tutorials/Novice/Getting_Started.md
+          - 2. Computerize a Questionnaire: CreatingExperiments/Neuropsydia.py/Tutorials/Novice/Computerize_Questionnaire.md
+          - 3. Complexify this Questionnaire: CreatingExperiments/Neuropsydia.py/Tutorials/Novice/Complexify_Questionnaire.md
+          - 4. Include Info: CreatingExperiments/Neuropsydia.py/Tutorials/Novice/Include_Info_Participant.md
+        - 2. Apprentice: CreatingExperiments/Neuropsydia.py/Tutorials/Apprentice.md
 - Data Science:
   - R:
     - Introduction: DataScience/R/Introduction.md
