@@ -6,7 +6,7 @@ Unfortunately, I have NO idea how to automatically build a documentation based o
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Contribute-EN 
       CreatingExperiments/1.0.Getting_Started
