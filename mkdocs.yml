@@ -11,8 +11,8 @@ pages:
   - Neuropsychopharmacology: ClinicalPractice/Neuropsychopharmacology/Antidepressants.md
 - Creating Experiments and Tests:
   - Neuropsydia.py:
-    - Documentation:
-      - API: CreatingExperiments/Neuropsydia.py/Documentation/API.md
+#    - Documentation:
+#      - API: CreatingExperiments/Neuropsydia.py/Documentation/API.md
     - Tutorials:
       - 1. Novice: CreatingExperiments/Neuropsydia.py/Tutorials/Novice.md
       - 2. Apprentice: CreatingExperiments/Neuropsydia.py/Tutorials/Apprentice.md
