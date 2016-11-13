@@ -9,15 +9,15 @@ See those for further informations.
 
 Note that by default, there is already a Time class object called "time" (lowercase) that is initialized at neuropsydia's loading. For the sake of clarity, use this one (e.g., n.time.wait() ), especially for wait() and control() functions.
 
-<font size="12">Parameters</font>
+<font color="#2196F3" size="9">Parameters</font>
 
 None
 
-<font size="12">Returns</font>
+<font color="#2196F3" size="9">Returns</font>
 
 None
 
-<font size="12">Example</font>
+<font color="#2196F3" size="9">Example</font>
 
 >>> import neuropsydia as n
 >>> n.start()
@@ -27,11 +27,11 @@ None
 >>> time_passed_since_reset = myclock.get()
 >>> n.close()
 
-<font size="12">Authors</font>
+<font color="#2196F3" size="9">Authors</font>
 
 Dominique Makowski
 
-<font size="12">Dependencies</font>
+<font color="#2196F3" size="9">Dependencies</font>
 
 - pygame 1.9.2
 - time
