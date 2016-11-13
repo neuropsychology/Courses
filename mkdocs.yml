@@ -25,6 +25,6 @@ pages:
     - Signal Processing:
       - EDA: DataScience/Python/SignalProcessing/EDA.md
 - Contributing: Contributing/Contribute.md
-- About:
-  - People: About/people.md
+#- About:
+#  - People: About/people.md
   
