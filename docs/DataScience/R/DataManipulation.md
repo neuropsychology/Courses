@@ -69,7 +69,7 @@ For remarks, complaints, suggestions or anything else, you can contact the creat
 
 tidyr
 
-- `gather()`
+- `gather(df, name_of_futur_column_of_conditions, name_of_futur_column_of_values, columns_to_add_or_to_remove)`
 - `separate()`
 - `spread(df, levels_to_columns, values)`
 
